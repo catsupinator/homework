@@ -1,0 +1,149 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(75, 29, 110);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title {
+    margin-top: 8px;
+}
+
+#recipe-title {
+    width: 30vw;
+    height: 30px;
+    border-radius: 15px;
+    border: 0px;
+    padding-left: 16px;
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+
+#ingredient {
+    width: calc(30vw - 50px);
+    height: 30px;
+    border-bottom-left-radius: 15px;
+    border-top-left-radius: 15px;
+    border: 0px;
+    padding-left: 16px;
+    margin: 0px;
+}
+
+#ingredient-button {
+    height: 30px;
+    width: 50px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border: 0px;
+    background-color: white;
+}
+
+.ingredient {
+    display: flex;
+    margin-top: 8px;
+    margin-bottom: 4px;
+}
+
+.ingredient-container {
+    width: 30vw;
+    height: 150px;
+    border-radius: 10px;
+    border-style: dashed;
+    padding: 8px;
+    box-sizing: border-box;
+    margin-bottom: 16px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.ingredient-container > div {
+    height: 30px;
+    border-radius: 15px;
+    border: 0px;
+    background-color: rgb(208, 175, 233);
+    padding-left: 8px;
+    padding-right: 8px;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#instruction {
+    width: calc(30vw - 50px);
+    height: 30px;
+    border-bottom-left-radius: 15px;
+    border-top-left-radius: 15px;
+    border: 2px;
+    border-color: black;
+    padding-left: 16px;
+    margin: 0px;
+}
+
+#instruction-button {
+    height: 30px;
+    width: 50px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border: 0px;
+    background-color: white;
+}
+
+.instruction {
+    display: flex;
+}
+
+.instruction-container {
+    width: 30vw;
+    height: 150px;
+    border-radius: 10px;
+    border-style: dashed;
+    padding: 8px;
+    box-sizing: border-box;
+    margin-top: 4px;
+    margin-bottom: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.instruction-container > div {
+    height: 30px;
+    width: calc(30vw - 20px);
+    border-radius: 5px;
+    border: 0px;
+    background-color: rgb(208, 175, 233);
+    padding-left: 8px;
+    color: black;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+#reset-button {
+    height: 30px;
+    border-radius: 15px;
+    padding-left: 16px;
+    padding-right: 16px;
+    border: 0px;
+}
+
+#builder {
+    height: 30px;
+    border-radius: 15px;
+    padding-left: 16px;
+    padding-right: 16px;
+    border: 0px;
+    background-color: rgb(208, 175, 233);
+}
+
+.end-buttons {
+    width: 30vw;
+    display: flex;
+    justify-content: flex-end;
+    gap: 8px;
+}

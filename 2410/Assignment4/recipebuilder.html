@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <script src="recipebuilder.js" defer></script>
+        <script src="writeRecipeToFile.js" defer></script>
+        <link rel="stylesheet" href="recipebuilder.css">
+    </head>
+    <body>
+        <h1 class="title">
+            Recipe Card Builder
+        </h1>
+        <div class="recipe-title">
+            <input id="recipe-title" type="text" value="Recipe Title" aria-description="Enter recipe title">
+        </div>
+        <div class="ingredient">
+            <input id="ingredient" type="text" value="Ingredient" aria-label="Enter ingredient" aria-description="Enter ingredient and press enter to add ingredient to ingredient list">
+            <button id="ingredient-button" aria-description="press enter to add ingredient">ADD</button>
+        </div>
+        <div class="ingredient-container" aria-label="list of ingredients" aria-live="polite">
+        </div>
+        <div class="instruction">
+            <input id="instruction" type="text" value="Instruction" aria-label="Enter instruction" aria-description="Enter instruction and press enter to add instruction to instruction list">
+            <button id="instruction-button" aria-description="press enter to add instruction">ADD</button>
+        </div>
+        <div class="instruction-container" aria-label="list of instructions" aria-live="polite">
+        </div>
+        <div class="end-buttons">
+            <button id="reset-button" aria-description="press enter reset the recipe">RESET</button>
+            <button id="builder" aria-description="press enter to save recipe card">SAVE RECIPE CARD</button>
+        </div>
+    </body>
+</html>
