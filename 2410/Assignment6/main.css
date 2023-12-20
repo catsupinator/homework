@@ -1,0 +1,103 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(165, 120, 214);
+}
+
+.container {
+    margin-top: 30vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container[data-search="true"] {
+    margin-top: 0;
+}
+
+.quote-container {
+    display: flex;
+    flex-direction: column;
+}
+
+#opening-quote {
+    width: 90vw;
+    font-family: cursive;
+    font-style: italic;
+    box-sizing: content-box;
+    display: flex;
+    flex-direction: column;
+}
+
+#opening-quote div{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.container[data-search="true"] #opening-quote {
+    width: 0;
+    height: 0;
+}
+
+.pinned-quote-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.pinned-quote-container > div {
+    background-color: rgb(197, 74, 135);
+    /*163, 24, 93*/
+}
+
+.quote {
+    width: 90vw;
+    background-color: rgb(250, 150, 184);
+    border-radius: 10px;
+    padding: 6px;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: content-box;
+    display: flex;
+    flex-direction: column;
+    margin: 2px;
+}
+
+.author {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.quote-container .quote[data-pinned="true"] {
+    background-color: rgb(163, 24, 93);
+}
+
+#search-bar {
+    width: 90vw;
+    margin-bottom: 4px;
+    height: 40px;
+    border-radius: 20px;
+    padding-left: 20px;
+    border-color: transparent;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
+    font-weight: 500;
+}
+
+#title {
+    margin: 4px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+}
+
+@media screen and (min-width: 700px) {
+    .quote {
+        width: 50vw;
+    }
+    #search-bar {
+        width: 50vw;
+    }
+    #opening-quote {
+        width: 50vw;
+    }
+}
